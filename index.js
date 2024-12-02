@@ -82,7 +82,7 @@ async function sendEmail(title, content) {
 
   const mailOptions = {
     from: "cs@tokokeren.web.id",
-    to: "sitisolehah@gmail.com",
+    to: "sitisolehahbantar@gmail.com",
     subject: title,
     html: content,
   };
