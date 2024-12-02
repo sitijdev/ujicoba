@@ -32,7 +32,7 @@ async function scrapeImages(keyword) {
 
 // Fungsi untuk generate artikel dengan Gemini API
 async function generateArticle(keyword) {
-  const prompt = `Buat artikel dalam bahasa inggris yang memenuhi kriteria artikel seo sempurna ${keyword}. Artikel harus enak dibaca dan sudah siap tayang tanpa perlu edit lagi. Jangan menulis karakter * di artikel.`;
+  const prompt = `Buat artikel dalam bahasa inggris yang memenuhi kriteria artikel seo sempurna ${keyword}. Artikel harus enak dibaca dan sudah siap tayang tanpa perlu edit lagi. Jangan menulis karakter * (bintang) di artikel.`;
   try {
     const result = await model.generateContent(prompt);
     const response = await result.response;
